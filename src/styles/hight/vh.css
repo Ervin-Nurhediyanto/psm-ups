@@ -10,8 +10,20 @@
 .h-80vh {
   height: 80vh;
 }
+.h-30vh {
+  height: 30vh;
+}
+.h-20vh {
+  height: 20vh;
+}
 .h-10vh {
   height: 10vh;
+}
+.h-7vh {
+  height: 7vh;
+}
+.h-6vh {
+  height: 6vh;
 }
 .h-5vh {
   height: 5vh;

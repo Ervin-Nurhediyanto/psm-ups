@@ -13,7 +13,7 @@
 import Navbar from '../../components/Navbar/navbar.vue'
 
 export default {
-  name: 'Process',
+  name: 'Form',
   components: {
     Navbar
   }
