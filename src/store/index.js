@@ -10,7 +10,6 @@ import TIterations from './Process/Tables/T-Iter'
 import KeyCols from './Process/Keys/cols'
 import KeyRows from './Process/Keys/rows'
 import KeyNumbs from './Process/Keys/numbs'
-import Primals from './Process/Method/Primal'
 
 Vue.use(Vuex)
 
@@ -31,7 +30,6 @@ export default new Vuex.Store({
     TIterations,
     KeyCols,
     KeyRows,
-    KeyNumbs,
-    Primals
+    KeyNumbs
   }
 })

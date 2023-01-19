@@ -7,56 +7,32 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('../views/Home/index.vue')
-  },
-  {
-    path: '/form',
-    name: 'Form',
-    component: () => import('../views/Form/index.vue'),
+    component: () => import('../views/Home/index.vue'),
+    redirect: {
+      name: 'Main'
+    },
     children: [
       {
-        path: '/form-primal',
-        name: 'Form-Primal',
-        component: () => import('../views/Form/Primal/index.vue')
+        path: '/main',
+        name: 'Main',
+        component: () => import('../views/Home/main.vue')
       },
       {
-        path: '/form-big-M',
-        name: 'Form-Big-M',
-        component: () => import('../views/Form/Big-M/index.vue')
+        path: '/input-coefficient',
+        name: 'Input-Coefficient',
+        component: () => import('../views/Home/input.vue')
       },
       {
-        path: '/form-dua-fase',
-        name: 'Form-Dua-Fase',
-        component: () => import('../views/Form/Dua-Fase/index.vue')
-      }
-    ]
-  },
-  {
-    path: '/process',
-    name: 'Process',
-    component: () => import('../views/Process/index.vue'),
-    children: [
-      {
-        path: '/process-primal',
-        name: 'Process-Primal',
-        component: () => import('../views/Process/Primal/index.vue')
-      },
-      {
-        path: '/process-big-M',
-        name: 'Process-Big-M',
-        component: () => import('../views/About/index.vue') // letak file belum pasti
-      },
-      {
-        path: '/process-dau-fase',
-        name: 'Process-Dua-Fase',
-        component: () => import('../views/About/index.vue') // letak file belum pasti
+        path: '/process',
+        name: 'Process',
+        component: () => import('../views/Process/index.vue')
       }
     ]
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import('../views/About/index.vue') // letak file belum pasti
+    component: () => import('../views/About/index.vue')
   }
 ]
 

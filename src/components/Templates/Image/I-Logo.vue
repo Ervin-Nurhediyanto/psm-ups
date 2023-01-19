@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import image from '../../../assets/logo.png'
-// import image from '../../../assets/PSM_Logo.png'
+// import image from '../../../assets/logo.png'
+import image from '../../../assets/PSM_Logo.png'
 
 export default {
   name: 'Image-Logo',

@@ -21,8 +21,8 @@
                     {{type_option[index - 1]}}
                   </a>
                 </li>
-                <!-- <li><a class="dropdown-item" href="#" @click.prevent="handleChange(type_option[index])">{{type_option[index]}}</a></li> -->
-                <!-- <li><a class="dropdown-item" href="#" @click.prevent="handleChange(type_option[index + 1])">{{type_option[index + 1]}}</a></li> -->
+                <!-- <li><a class="dropdown-item" href="#" @click.prevent="handleChange(type_option[index])">{{type_option[index]}}</a></li>
+                <li><a class="dropdown-item" href="#" @click.prevent="handleChange(type_option[index + 1])">{{type_option[index + 1]}}</a></li> -->
               </ul>
             </div>
           </div>
