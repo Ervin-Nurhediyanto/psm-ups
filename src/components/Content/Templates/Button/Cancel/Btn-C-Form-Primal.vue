@@ -10,8 +10,8 @@
 import { mapActions } from 'vuex'
 
 export default {
-  name: 'Btn-Cancel',
-  props: ['btnText', 'nameLink'],
+  name: 'Btn-Cancel-Home-Input',
+  props: ['btnText'],
   data () {
     return {
       data: {}
@@ -19,18 +19,11 @@ export default {
   },
   methods: {
     ...mapActions([
-      'clearData',
       'add_type_meth'
     ]),
     handleCancel () {
-      this.clearData().then((res) => {
-        this.add_type_meth('PRIMAL')
-      })
-      if (this.nameLink) {
-        this.$router.replace({
-          name: this.nameLink
-        })
-      }
+      this.add_type_meth('PRIMAL')
+      this.$emit('onReset', true)
     }
   }
 }

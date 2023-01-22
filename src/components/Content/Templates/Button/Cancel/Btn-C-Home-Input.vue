@@ -11,7 +11,7 @@ import { mapActions } from 'vuex'
 
 export default {
   name: 'Btn-Cancel-Home-Input',
-  props: ['btnText', 'nameLink'],
+  props: ['btnText'],
   data () {
     return {
       data: {}

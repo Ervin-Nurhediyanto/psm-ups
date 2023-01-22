@@ -1,7 +1,7 @@
 <template>
   <div class="row-xl h-95vh d-flex justify-content-center align-items-center">
     <div class="col-12 col-sm-12 col-md-8 col-xl-10 px-0">
-      <div class="h-80vh  w-100 p-3 shadow rounded scrollbar-none bg-aqua">
+      <div class="h-80vh  w-100 p-3 shadow rounded overflow scrollbar-none bg-aqua">
         <div class="my-3">{{ data.text.intro }}</div>
         <div class="my-3">{{ data.text.create }}</div>
         <div class="my-3">{{ data.text.list }}</div>
