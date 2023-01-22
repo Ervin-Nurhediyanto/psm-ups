@@ -1,6 +1,6 @@
 <template>
   <div class="row-xl h-100vh d-flex justify-content-center align-items-center">
-    <div class="col-12 col-sm-12 col-md-8 col-xl-5 h-80vh px-0">
+    <div class="col-12 col-sm-12 col-md-8 col-xl-5 h-60vh px-0">
       <form class="h-100 w-100 overflow scrollbar-none shadow mt-2 p-3 rounded bg-aqua">
         <Logo/>
         <Input
@@ -11,7 +11,10 @@
         />
         <div class="row">
           <div class="col">
-            <!-- <BtnCancel :btnText="'RESET'"/> -->
+            <BtnReset
+              :btnText="'RESET'"
+              v-on:onReset="onReset"
+            />
           </div>
           <div class="col">
             <BtnSubmit
@@ -29,8 +32,7 @@
 import Logo from '../Templates/Image/I-Logo.vue'
 import Input from './Input/C-Input-Main.vue'
 import BtnSubmit from '../Templates/Button/Submit/Btn-S-Home-Input.vue'
-
-// import BtnCancel from '../Templates/Button/Cancel.vue'
+import BtnReset from '../Templates/Button/Cancel/Btn-C-Home-Input.vue'
 import { mapActions } from 'vuex'
 
 export default {
@@ -48,8 +50,8 @@ export default {
   components: {
     Logo,
     Input,
-    BtnSubmit
-    // BtnCancel
+    BtnSubmit,
+    BtnReset
   },
   methods: {
     ...mapActions([
@@ -64,6 +66,11 @@ export default {
     },
     changeMethod (value) {
       this.data.type_meth = value
+    },
+    onReset () {
+      this.data.numb_v = 0
+      this.data.numb_c = 0
+      this.data.type_meth = 'PRIMAL'
     }
   },
   mounted () {
