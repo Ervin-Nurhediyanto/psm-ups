@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12 h-5vh m-0 p-0 shadow bg-warning">
+  <div class="col-12 m-0 p-0 shadow bg-warning">
     <div class="row m-0 p-0 justify-content-between">
       <NavLogo/>
       <NavMenu/>
