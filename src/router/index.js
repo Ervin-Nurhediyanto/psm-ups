@@ -29,6 +29,11 @@ const routes = [
             path: '/form-primal',
             name: 'Form-Primal',
             component: () => import('../views/PSM/Form/primal.vue')
+          },
+          {
+            path: '/form-big-m',
+            name: 'Form-Big-M',
+            component: () => import('../views/PSM/Form/big-m.vue')
           }
         ]
       },
@@ -44,6 +49,11 @@ const routes = [
             path: '/process-primal',
             name: 'Process-Primal',
             component: () => import('../views/PSM/Process/primal.vue')
+          },
+          {
+            path: '/process-big-m',
+            name: 'Process-Big-M',
+            component: () => import('../views/PSM/Process/big-m.vue')
           }
         ]
       }
