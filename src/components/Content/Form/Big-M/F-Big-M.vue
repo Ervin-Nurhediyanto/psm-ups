@@ -10,10 +10,10 @@
     />
     <div class="row">
       <div class="col">
-        <!-- <BtnReset
+        <BtnReset
           :btnText="'RESET'"
           v-on:onReset="onReset"
-        /> -->
+        />
       </div>
       <div class="col">
         <BtnSubmit
@@ -29,8 +29,7 @@
 import Logo from '../../Templates/Image/I-Logo.vue'
 import FInput from './F-Big-M-Input.vue'
 import BtnSubmit from '../../Templates/Button/Submit/Btn-S-Form-Big-M.vue'
-// import BtnSubmit from '../../Templates/Button/Submit/Btn-S-Form-Primal.vue'
-// import BtnReset from '../../Templates/Button/Cancel/Btn-C-Form-Primal.vue'
+import BtnReset from '../../Templates/Button/Cancel/Btn-C-Form-Big-M.vue'
 import { mapGetters, mapActions } from 'vuex'
 
 export default {
@@ -49,9 +48,8 @@ export default {
   components: {
     Logo,
     FInput,
-    BtnSubmit
-    // BtnSubmit,
-    // BtnReset
+    BtnSubmit,
+    BtnReset
   },
   computed: {
     ...mapGetters({
@@ -83,6 +81,7 @@ export default {
     onReset () {
       this.data.type_op = 'MIN'
       this.data.input = []
+      this.data.symbols = []
       this.onLoad()
     },
     onLoad () {

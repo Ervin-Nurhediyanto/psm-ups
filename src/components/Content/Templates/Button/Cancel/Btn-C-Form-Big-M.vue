@@ -10,7 +10,7 @@
 import { mapActions } from 'vuex'
 
 export default {
-  name: 'Btn-Cancel-Form-Primal',
+  name: 'Btn-Cancel-Form-Big-M',
   props: ['btnText'],
   data () {
     return {
@@ -22,7 +22,7 @@ export default {
       'add_type_meth'
     ]),
     handleCancel () {
-      this.add_type_meth('PRIMAL')
+      this.add_type_meth('BIG M')
       this.$emit('onReset', true)
     }
   }

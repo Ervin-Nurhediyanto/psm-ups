@@ -40,7 +40,9 @@ export default {
             name: 'Form-Big-M'
           })
         } else if (this.data.type_meth === 'DUA FASE') {
-          console.log('Dua Fase masih dalam proses pengerjaan')
+          this.$router.replace({
+            name: 'Form-Dua-Fase'
+          })
         }
       }
     }
