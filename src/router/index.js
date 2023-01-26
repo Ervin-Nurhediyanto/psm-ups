@@ -34,6 +34,11 @@ const routes = [
             path: '/form-big-m',
             name: 'Form-Big-M',
             component: () => import('../views/PSM/Form/big-m.vue')
+          },
+          {
+            path: '/form-dua-fase',
+            name: 'Form-Dua-Fase',
+            component: () => import('../views/PSM/Form/dua-fase.vue')
           }
         ]
       },

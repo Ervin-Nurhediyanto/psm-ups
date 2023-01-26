@@ -42,8 +42,7 @@ export default {
       data: {
         numb_v: 0,
         numb_c: 0,
-        // type_meth: 'PRIMAL',
-        type_meth: 'BIG M',
+        type_meth: 'PRIMAL',
         type_option: ['PRIMAL', 'BIG M', 'DUA FASE']
       }
     }
