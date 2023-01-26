@@ -1,6 +1,5 @@
 <template>
   <span v-if="i > 1">
-    <!-- {{ data.table_1st[i] }} -->
     <span v-for="j in data.table_1st[i].length" :key="j">
       <!-- Operation -->
       <span v-if="j === data.table_1st[i].length - 1" class="px-1">=</span>
@@ -23,23 +22,6 @@
         <span class="font-10px">{{ j - 2 - numb_v - numb_s}} </span>
       </span>
     </span>
-    <!-- <span v-for="j in data.table_1st[i].length" :key="j">
-      Operation =
-      <span v-if="j === data.table_1st[i - 1].length - 3" class="px-1">=</span>
-      <span v-if="j > 1 && j !== data.table_1st[i - 1].length - 3" class="px-1">+</span>
-      value variable
-      <span class="p-0">{{ data.table_1st[i][j + 1][0] }}</span>
-      X variable
-      <span v-if="j <= numb_v">
-        <span class="p-0">X</span>
-        <span class="font-10px">{{ j }}</span>
-      </span>
-      S variable
-      <span v-else-if="j <= numb_v + numb_c && j !== data.table_1st[i - 1].length - 3">
-        <span class="p-0">S</span>
-        <span class="font-10px">{{ j - numb_v}}</span>
-      </span> -->
-    <!-- </span> -->
   </span>
 </template>
 

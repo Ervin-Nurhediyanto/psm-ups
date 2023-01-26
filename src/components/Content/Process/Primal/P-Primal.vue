@@ -5,7 +5,7 @@
       <Step1st :index="index" :data="data"/>
       <Step2nd :index="index" :data="data"/>
       <StepIts :index="index" :n="data.n"/>
-      <StepFin :index="index" :n="data.n"/>
+      <StepFin :index="index" :n="data.n" :type_op="data.type_op"/>
       <TableSP v-if="index > 1" :n="index - 2" :data="data"/>
       <StepRes :index="index" :n="data.n" :data="data"/>
     </form>

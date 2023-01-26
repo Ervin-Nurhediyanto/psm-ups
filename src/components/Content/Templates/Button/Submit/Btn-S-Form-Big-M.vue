@@ -323,10 +323,16 @@ export default {
               if (n > 0) {
                 data.table_it[n - 1][i][data.n.Row - 1] = indexValue
               }
+              if (n === 0) { // input index table 1st
+                this.add_table_1st(JSON.stringify(data.table_it[n]))
+              }
             } else {
               data.table_it[n][i][data.n.Row - 1] = ['INFINITY', 0]
               if (n > 0) {
                 data.table_it[n][i][data.n.Row - 1] = ['INFINITY', 0]
+              }
+              if (n === 0) { // input index table 1st
+                this.add_table_1st(JSON.stringify(data.table_it[n]))
               }
             }
           }
