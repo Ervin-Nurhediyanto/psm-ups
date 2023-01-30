@@ -27,43 +27,7 @@ export default {
         members: [
           {
             name: 'Ervin Nurhediyanto',
-            nim: '(1722600016)'
-          },
-          {
-            name: 'Rizki Umami',
-            nim: '(1721600025)'
-          },
-          {
-            name: 'Muhammad Doni Irawan',
-            nim: '(1721600020)'
-          },
-          {
-            name: 'Selvia Isnaeni',
-            nim: '(1721600015)'
-          },
-          {
-            name: 'Nanda Fatia Dewi',
-            nim: '(1721600023)'
-          },
-          {
-            name: 'Lulu Niswatun Khasanah',
-            nim: '(1721600017)'
-          },
-          {
-            name: 'Salsabila Nur Aurora',
-            nim: '(1721600024)'
-          },
-          {
-            name: 'Aenun Wahyuningrum',
-            nim: '(1721600021)'
-          },
-          {
-            name: 'Nur Afifah',
-            nim: '(1721600030)'
-          },
-          {
-            name: 'Putri Rahmatul Awalia',
-            nim: '(1721600027)'
+            nim: ''
           }
         ],
         owner: {
@@ -71,9 +35,9 @@ export default {
           nim: '1722600016'
         },
         text: {
-          intro: 'PSM (Program Simpleks Method) adalah aplikasi yang dirancang untuk mempermudah penyelesaian program linear pada metode simpleks. Aplikasi ini masih dalam tahap pengembangan sehingga hanya terbatas pada penyelesaian dengan metode simpleks primal.',
-          create: 'Aplikasi ini dibuat oleh mahasiswa Pendidikan Matematika Universitas Pancasakti Tegal untuk memenuhi tugas Mata Kuliah Program Linear dengan dosen pengampu AHMADI, S.Pd.,M.Si.',
-          list: 'Anggota Kelompok:'
+          intro: 'PSM (Program Simpleks Method) adalah aplikasi yang dirancang untuk mempermudah penyelesaian program linear pada metode simpleks. Aplikasi ini masih dalam tahap pengembangan.',
+          create: 'Aplikasi ini dikembangkan mahasiswa Pendidikan Matematika Universitas Pancasakti Tegal dengan dosen pengampu AHMADI, S.Pd.,M.Si.',
+          list: 'Oleh:'
         }
       }
     }

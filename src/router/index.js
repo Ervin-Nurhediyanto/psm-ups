@@ -59,6 +59,11 @@ const routes = [
             path: '/process-big-m',
             name: 'Process-Big-M',
             component: () => import('../views/PSM/Process/big-m.vue')
+          },
+          {
+            path: '/process-dua-fase',
+            name: 'Process-Dua-Fase',
+            component: () => import('../views/PSM/Process/dua-fase.vue')
           }
         ]
       }

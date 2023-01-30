@@ -41,8 +41,6 @@ export default {
       'add_numb_a'
     ]),
     handleSubmit () {
-      console.log('DATA AWAL:')
-      console.log(this.data)
       const data = {
         typeOp: this.data.type_op,
         input: this.data.input,
@@ -231,7 +229,6 @@ export default {
     onProcess (data) {
       let n = 0
       while (this.DT.isOptimal === false) {
-        console.log(`Iterasi ke- ${n}`)
         if (n === 0) {
           const parse = JSON.parse(this.table_1st, (key, value) => {
             if (typeof value === 'string') {
@@ -260,8 +257,10 @@ export default {
         value: [0, 0]
       }
       for (let i = 0; i < data.n.Row - 2; i++) {
-        const dataB = data.table_it[n][1][i][0] // Data Basic
-        const dataM = data.table_it[n][1][i][1] // Data Big M
+        const dataB = (Math.round((data.table_it[n][1][i][0] + Number.EPSILON) * 100) / 100) // Data Basic
+        const dataM = (Math.round((data.table_it[n][1][i][1] + Number.EPSILON) * 100) / 100) // Data Big M
+        // const dataB = data.table_it[n][1][i][0] // Data Basic
+        // const dataM = data.table_it[n][1][i][1] // Data Big M
         const dataValue = data.table_it[n][1][i]
         if (data.typeOp === 'MIN' && i > 1) { // Min Function
           if (keyCol.value[0] === 0 && keyCol.value[1] === 0) {
