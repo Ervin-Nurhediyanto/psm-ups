@@ -1,7 +1,7 @@
 <template>
   <span v-if="i !== 1 && j === data.numb_v + 1">
     <button
-      class="btn btn-success m-1 p-1 w-40px border border-1 border-light"
+      class="btn btn-transparent bg-cream m-1 p-1 w-40px border border-1 border-light"
       @click.prevent="handleChange(data.symbols[i - 1], [i - 1])"
     >
       <b>{{ symbol }}</b>

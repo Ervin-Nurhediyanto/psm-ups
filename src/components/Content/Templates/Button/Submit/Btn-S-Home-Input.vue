@@ -1,7 +1,7 @@
 <template>
   <div>
     <button
-      class="btn btn-success my-1 w-100"
+      class="btn btn-primary my-1 w-100"
       @click.prevent="handleSubmit"
     >
       <b>{{ btnText }}</b>

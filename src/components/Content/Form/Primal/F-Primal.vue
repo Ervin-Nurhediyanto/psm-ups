@@ -1,5 +1,5 @@
 <template>
-  <form class="h-100 w-100 overflow scrollbar-none shadow mt-2 p-3 rounded bg-aqua">
+  <form class="h-100 w-100 overflow scrollbar-none shadow mt-2 p-3 rounded bg-green">
     <Logo/>
     <FInput
       :data="data"
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import Logo from '../../Templates/Image/I-Logo.vue'
+import Logo from '../../Templates/Image/I-Logo-Primal.vue'
 import FInput from './F-Primal-Input.vue'
 import BtnSubmit from '../../Templates/Button/Submit/Btn-S-Form-Primal.vue'
 import BtnReset from '../../Templates/Button/Cancel/Btn-C-Form-Primal.vue'

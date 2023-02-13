@@ -1,7 +1,7 @@
 <template>
   <div class="row-xl h-100vh d-flex justify-content-center align-items-center">
     <div class="col-12 col-sm-12 col-md-8 col-xl-5 h-60vh px-0">
-      <form class="h-100 w-100 overflow scrollbar-none shadow mt-2 p-3 rounded bg-aqua">
+      <form class="h-100 w-100 overflow scrollbar-none shadow mt-2 p-3 rounded bg-green">
         <Logo/>
         <Input
           :data="data"

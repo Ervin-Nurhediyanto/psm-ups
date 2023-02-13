@@ -10,7 +10,7 @@
 import { mapActions } from 'vuex'
 
 export default {
-  name: 'Btn-Cancel-Form-Big-M',
+  name: 'Btn-Cancel-Form-Dua-Fase',
   props: ['btnText'],
   data () {
     return {
@@ -22,7 +22,7 @@ export default {
       'add_type_meth'
     ]),
     handleCancel () {
-      this.add_type_meth('BIG M')
+      this.add_type_meth('DUA FASE')
       this.$emit('onReset', true)
     }
   }

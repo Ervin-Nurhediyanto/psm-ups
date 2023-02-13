@@ -1,5 +1,5 @@
 <template>
-  <form class="h-100 w-100 overflow scrollbar-none shadow mt-2 p-3 rounded bg-aqua">
+  <form class="h-100 w-100 overflow scrollbar-none shadow mt-2 p-3 rounded bg-green">
     <Logo/>
     <FInput
       :data="data"
@@ -10,10 +10,10 @@
     />
     <div class="row">
       <div class="col">
-        <!-- <BtnReset
+        <BtnReset
           :btnText="'RESET'"
           v-on:onReset="onReset"
-        /> -->
+        />
       </div>
       <div class="col">
         <BtnSubmit
@@ -26,11 +26,12 @@
 </template>
 
 <script>
-import Logo from '../../Templates/Image/I-Logo.vue'
+// import Logo from '../../Templates/Image/I-Logo.vue'
+import Logo from '../../Templates/Image/I-Logo-Dua-Fase.vue'
 import FInput from './F-Dua-Fase-Input.vue'
 import BtnSubmit from '../../Templates/Button/Submit/Btn-S-Form-Dua-Fase.vue'
 // import BtnSubmit from '../../Templates/Button/Submit/Btn-S-Form-Big-M.vue'
-// import BtnReset from '../../Templates/Button/Cancel/Btn-C-Form-Big-M.vue'
+import BtnReset from '../../Templates/Button/Cancel/Btn-C-Form-Dua-Fase.vue'
 import { mapGetters, mapActions } from 'vuex'
 
 export default {
@@ -49,8 +50,8 @@ export default {
   components: {
     Logo,
     FInput,
-    BtnSubmit
-    // BtnReset
+    BtnSubmit,
+    BtnReset
   },
   computed: {
     ...mapGetters({
@@ -64,6 +65,12 @@ export default {
       'add_type_op',
       'add_symbols'
     ]),
+    onReset () {
+      this.data.type_op = 'MIN'
+      this.data.input = []
+      this.data.symbols = []
+      this.onLoad()
+    },
     onLoad () {
       this.data.numb_c = Number(this.numb_c)
       this.data.numb_v = Number(this.numb_v)
