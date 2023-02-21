@@ -97,7 +97,7 @@ export default {
       }
     }
   },
-  mounted () {
+  created () {
     this.parseData(this.table_1, 'table_1')
     this.parseData(this.table_it, 'table_it')
     this.parseData(this.table_it2, 'table_it2')
@@ -116,5 +116,24 @@ export default {
     this.data.numb_a = Number(this.numb_a)
     this.data.numb_s = Number(this.numb_s)
   }
+  // mounted () {
+  //   this.parseData(this.table_1, 'table_1')
+  //   this.parseData(this.table_it, 'table_it')
+  //   this.parseData(this.table_it2, 'table_it2')
+  //   this.parseData(this.table_1st, 'table_1st')
+  //   this.parseData(this.table_2nd, 'table_2nd')
+  //   this.parseData(this.keyCols, 'key_cols')
+  //   this.parseData(this.keyCols2, 'key_cols2')
+  //   this.parseData(this.keyRows, 'key_rows')
+  //   this.parseData(this.keyRows2, 'key_rows2')
+  //   this.parseData(this.var_a, 'var_a')
+  //   this.data.n += this.data.table_it.length
+  //   this.data.n2 += this.data.table_it2.length
+  //   this.data.type_op = this.type_op
+  //   this.data.numb_c = Number(this.numb_c)
+  //   this.data.numb_v = Number(this.numb_v)
+  //   this.data.numb_a = Number(this.numb_a)
+  //   this.data.numb_s = Number(this.numb_s)
+  // }
 }
 </script>
